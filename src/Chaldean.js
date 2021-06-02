@@ -33,11 +33,11 @@ const chaldeanFunction = (firstName) => {
              }
 
              if(letter === 'o' || letter === 'z'){
-                 correspondingNo.push(6);
+                 correspondingNo.push(7);
              }
 
              if(letter === 'f' || letter === 'p'){
-                 correspondingNo.push(6);
+                 correspondingNo.push(8);
              }
 
          }
@@ -47,7 +47,7 @@ const chaldeanFunction = (firstName) => {
         sum = sum + letter;
     }
 
-        console.log(sum);
+        // console.log(sum);
         return sum;
 }
 

@@ -1,7 +1,5 @@
 import React from 'react';
 import {useState} from 'react';
-import { TiSortNumericallyOutline } from "react-icons/ti";
-import { MdError } from "react-icons/md";
 import Chaldean from './Chaldean';
 import PeopleComp from './PeopleComp';
 
@@ -9,7 +7,6 @@ import PeopleComp from './PeopleComp';
 
     const [firstName,setFirstName] = useState('');
     const [people,setPeople] = useState([]);
-    const [isError,setIsError] = useState(false);
     
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -34,12 +31,7 @@ import PeopleComp from './PeopleComp';
     return (
         <>
         <article>
-
-            {isError && <span className='btn-icon'> <MdError/></span> }
-
-            {!isError && <h1 className='btn-icon'>please enter your name  </h1>}
             
-
             <form className='form' onSubmit = {handleSubmit}> 
                 <div className="form-control">
                     <label htmlFor="firstName">NAME : </label>
