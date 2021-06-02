@@ -46,7 +46,7 @@ import logo from './LNH-LOGO.png'
                 <div className="form-control">
                     
                     <label htmlFor="firstName">NAME : </label>
-                        <input type="text" id='firstName' name='firstName' value = {firstName} onChange = {(e)=> setFirstName( e.target.value)} required minLength='3' maxLength='100' pattern = '^[a-zA-Z]*$' placeholder='enter name'/>
+                        <input type="text" id='firstName' name='firstName' value = {firstName} onChange = {(e)=> setFirstName( e.target.value)} required minLength='3' maxLength='100' pattern = '^[a-zA-Z]*$' placeholder='Enter Name'/>
                 </div>
                 <div className="button-container">
                 <button type='submit'>find no</button>
