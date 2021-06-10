@@ -395,3 +395,150 @@ p {
   object-fit: cover;
   width: 100%;
 }
+
+.box-container {
+  position: relative;
+  max-width: 600px;
+  height: 450px;
+  /* background: #ff0; */
+  margin: 150px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 5px solid #f7bb6c;
+  box-shadow: var(--dark-shadow);
+}
+
+.box-container .box {
+  background: rgba(225, 225, 225, 0.5);
+  display: grid;
+  border: 1px solid #f7bb6c;
+}
+
+.planets {
+  display: none;
+}
+
+.box-container .box:hover {
+  background: #aa2282;
+  color: #f7bb6c;
+}
+
+.box-container .box:hover .planets {
+  display: block;
+}
+
+.box-container .box h3 {
+  margin: 0;
+  padding: 0;
+  justify-self: center;
+  align-self: center;
+  font-size: 30px;
+}
+
+.direction {
+  position: absolute;
+  color: #f7bb6c;
+}
+
+.direction-one {
+  top: -10%;
+  left: -9%;
+}
+
+.direction-two {
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.direction-three {
+  top: -10%;
+  right: -9%;
+}
+
+.direction-four {
+  top: 50%;
+  left: -6%;
+}
+
+.direction-five {
+  top: 50%;
+  right: -10%;
+}
+
+.direction-six {
+  top: 100%;
+  left: -9%;
+}
+
+.direction-seven {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.direction-eight {
+  top: 100%;
+  right: -12%;
+}
+
+@media screen and (max-width: 992px) {
+  .box-container {
+    width: 250px;
+    height: 220px;
+  }
+
+  .box-container h2 {
+    font-size: 20px;
+  }
+
+  .form button {
+    font-size: 10px;
+  }
+
+  .box h3 {
+    font-size: 20px !important;
+  }
+
+  .direction-one {
+    top: -13%;
+    left: -12%;
+  }
+
+  .direction-two {
+    top: -14%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .direction-three {
+    top: -13%;
+    right: -15%;
+  }
+
+  .direction-four {
+    top: 50%;
+    left: -9%;
+  }
+
+  .direction-five {
+    top: 50%;
+    right: -13%;
+  }
+
+  .direction-six {
+    top: 100%;
+    left: -13%;
+  }
+
+  .direction-seven {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .direction-eight {
+    top: 100%;
+    right: -18%;
+  }
+}
